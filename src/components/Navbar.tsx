@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 
-import Logo from './Logo';
-
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,7 +18,9 @@ export default function Navbar() {
     { name: 'Inicio', href: '#inicio' },
     { name: 'Servicios', href: '#servicios' },
     { name: 'Galería', href: '#galeria' },
+    { name: 'Productos', href: '#productos' },
     { name: 'Nosotros', href: '#nosotros' },
+    { name: 'Historia', href: '#historia' },
     { name: 'Opiniones', href: '#opiniones' },
     { name: 'Contacto', href: '#contacto' },
   ];
@@ -28,11 +28,17 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-dark/80 backdrop-blur-md py-4 border-b border-gold/20 shadow-lg' : 'bg-transparent py-6'
+        isScrolled ? 'bg-dark/80 backdrop-blur-md py-4 border-b border-gold/20 shadow-lg' : 'bg-transparent py-4'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <Logo className="text-white" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-10 md:h-12">
+        <div className="relative flex items-center h-full w-32 md:w-48 lg:w-56">
+          <img 
+            src="/fotos/Logonexxus.jpg" 
+            alt="Nexxus Logo" 
+            className="absolute top-1/2 -translate-y-1/2 left-0 h-24 md:h-32 lg:h-40 mix-blend-lighten opacity-90 object-contain pointer-events-none" 
+          />
+        </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">

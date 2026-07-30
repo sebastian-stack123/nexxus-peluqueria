@@ -30,14 +30,14 @@ export default function Contact() {
               
               <div className="flex items-start space-x-4">
                 <Clock className="text-gold flex-shrink-0 mt-1" size={24} />
-                <div>
-                  <h4 className="text-white font-bold mb-1">Horario</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Lun, Mié, Jue, Sáb: 9 AM - 7 PM<br/>
-                    Martes: Abierto 24 horas<br/>
-                    Viernes: 9 AM - 6 PM<br/>
-                    Domingo: Cerrado
-                  </p>
+                <div className="w-full">
+                  <h4 className="text-white font-bold mb-3">Horario</h4>
+                  <ul className="text-sm text-gray-400 space-y-2 border border-gold/10 p-4 rounded-sm bg-[#111]">
+                    <li className="flex justify-between border-b border-gray-800 pb-2"><span>Lunes, Miércoles, Jueves, Sábado</span> <span className="text-white">9:00 AM - 7:00 PM</span></li>
+                    <li className="flex justify-between border-b border-gray-800 py-2"><span>Martes</span> <span className="text-gold font-medium">Abierto 24 horas</span></li>
+                    <li className="flex justify-between border-b border-gray-800 py-2"><span>Viernes</span> <span className="text-white">9:00 AM - 6:00 PM</span></li>
+                    <li className="flex justify-between pt-2"><span>Domingo</span> <span className="text-gray-500">Cerrado</span></li>
+                  </ul>
                 </div>
               </div>
 
@@ -56,15 +56,6 @@ export default function Contact() {
                   <p className="text-gray-400">reservas@nexxus.ec</p>
                 </div>
               </div>
-            </div>
-
-            <div className="flex space-x-6">
-              <a href="#" className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-white hover:bg-gold hover:text-dark transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-[#1a1a1a] flex items-center justify-center text-white hover:bg-gold hover:text-dark transition-colors">
-                <Facebook size={20} />
-              </a>
             </div>
 
             <form className="space-y-6 pt-8 border-t border-gray-800" onSubmit={(e) => e.preventDefault()}>

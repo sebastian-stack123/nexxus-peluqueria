@@ -1,12 +1,12 @@
 import { motion } from 'motion/react';
-import { Award, ShieldCheck, HeartHandshake, Users, Home } from 'lucide-react';
+import { Award, ShieldCheck, HeartHandshake, Users, Home, Leaf, Globe, Sparkles } from 'lucide-react';
 
 const reasons = [
-  { icon: <Award size={40} />, title: '+10 Años de Experiencia', desc: 'Una década perfeccionando nuestro arte.' },
-  { icon: <ShieldCheck size={40} />, title: 'Productos Profesionales', desc: 'Solo usamos las mejores marcas del mercado.' },
-  { icon: <HeartHandshake size={40} />, title: 'Atención Personalizada', desc: 'Asesoría de imagen para cada cliente.' },
-  { icon: <Users size={40} />, title: 'Especialistas Certificados', desc: 'Equipo en constante formación internacional.' },
-  { icon: <Home size={40} />, title: 'Ambiente Moderno', desc: 'Instalaciones de lujo para tu máximo confort.' },
+  { icon: <Award size={40} />, title: '+30 Años de Experiencia', desc: 'Tres décadas perfeccionando nuestro arte.' },
+  { icon: <Leaf size={40} />, title: 'Productos No Tóxicos', desc: 'Fórmulas limpias que protegen tu salud.' },
+  { icon: <HeartHandshake size={40} />, title: 'Saludables & Veganos', desc: 'Respeto absoluto por tu cabello y el planeta.' },
+  { icon: <Globe size={40} />, title: 'Calidad Europea', desc: 'Las mejores marcas internacionales.' },
+  { icon: <Sparkles size={40} />, title: 'Principios Éticos', desc: 'Compromiso y transparencia en cada proceso.' },
 ];
 
 export default function WhyChooseUs() {
@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
           <h2 className="text-sm text-gold uppercase tracking-[0.4em] mb-4">Excelencia en cada detalle</h2>
           <h3 className="text-5xl md:text-6xl font-serif font-light text-white mb-6">¿Por qué elegirnos?</h3>
           <p className="max-w-2xl mx-auto text-gray-400 text-lg font-light leading-relaxed">
-            En Nexxus, no solo cortamos cabello; creamos experiencias. Nos enorgullece ofrecer un servicio de primer nivel, comparable con los mejores salones del mundo.
+            En Nexxus, no solo cortamos cabello; creamos experiencias. Nos enorgullece ofrecer un servicio de primer nivel, comparable con los mejores salones del mundo, siempre siguiendo principios éticos en cada paso.
           </p>
         </div>
 

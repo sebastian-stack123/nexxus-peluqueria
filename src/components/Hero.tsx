@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2574&auto=format&fit=crop"
+          src="/fotos/inicio.jpg"
           alt="Salón Nexxus"
           className="w-full h-full object-cover object-center"
         />
@@ -16,9 +16,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div className="absolute -left-12 top-1/2 -translate-y-1/2 text-[#1a1a1a] font-serif text-[180px] md:text-[250px] font-bold leading-none select-none -z-10 hidden md:block">
-          LUXURY
-        </div>
         <span className="text-gold text-sm uppercase tracking-[0.4em] mb-4 block">Quito • Ecuador</span>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

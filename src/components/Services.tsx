@@ -7,8 +7,8 @@ const services = [
   { icon: <Sparkles size={32} />, name: 'Balayage', desc: 'Técnica francesa para un degradado natural y luminoso.' },
   { icon: <Star size={32} />, name: 'Mechas', desc: 'Iluminación estratégica para darle vida a tu cabello.' },
   { icon: <Wind size={32} />, name: 'Alisados', desc: 'Alisados permanentes y progresivos sin dañar la fibra.' },
-  { icon: <Droplet size={32} />, name: 'Tratamientos', desc: 'Hidratación profunda, botox capilar y reconstrucción.' },
-  { icon: <UserCheck size={32} />, name: 'Barbería', desc: 'Cortes clásicos, perfilado de barba y cuidado masculino.' },
+  { icon: <Droplet size={32} />, name: 'Cuidado de hebra capilar', desc: 'Tratamientos profundos, botox capilar y reconstrucción.' },
+  { icon: <UserCheck size={32} />, name: 'Peluquería escogida', desc: 'Diseños de autor personalizados para cada cliente.' },
   { icon: <Heart size={32} />, name: 'Peinados', desc: 'Estilos elegantes para novias, quinceañeras y eventos especiales.' },
 ];
 

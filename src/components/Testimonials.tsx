@@ -4,19 +4,19 @@ import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Carolina Mendoza',
-    role: 'Cliente Frecuente',
-    content: 'El nivel de profesionalismo en Nexxus es inigualable. Sentí que estaba en un salón de Nueva York. El balayage que me hicieron quedó espectacular y el trato fue de lujo desde que entré.',
+    name: 'Thomas Brandenburg',
+    role: 'Local Guide',
+    content: 'I happened across this place while on a walk and decided I could use a haircut. Good service, good haircut, good location, good everything.',
   },
   {
-    name: 'Andrea Salazar',
-    role: 'Novia',
-    content: 'Confié en ellos para el día de mi boda y fue la mejor decisión. El peinado duró toda la noche y el maquillaje resaltó mis facciones de manera muy elegante. Totalmente recomendados.',
+    name: 'Roberto Mendoza Bruzzone',
+    role: 'Local Guide',
+    content: 'Excelente atención, buenos precios.',
   },
   {
-    name: 'Roberto Velez',
-    role: 'Cliente Ejecutivo',
-    content: 'La barbería es impecable. El ambiente es relajante y el corte siempre es preciso. Es mi lugar de confianza para mantener mi imagen corporativa.',
+    name: 'Leonor Arcos Donoso',
+    role: '',
+    content: 'Excelente atención. Positivo: Puntualidad, Limpieza, Calidad, Profesionalismo, Valor',
   },
 ];
 

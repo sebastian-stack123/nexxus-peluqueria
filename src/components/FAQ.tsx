@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: '¿Qué productos utilizan en el salón?',
-    answer: 'Utilizamos exclusivamente líneas profesionales de alta gama como Kérastase, L\'Oréal Professionnel, Redken y Olaplex, garantizando el cuidado óptimo de tu cabello.',
+    answer: 'Utilizamos exclusivamente líneas profesionales de alta gama y previamente comprobados para cuidado óptimo de tu cabello.',
   },
   {
     question: '¿Hacen evaluaciones antes de un cambio de color?',
@@ -18,11 +18,7 @@ const faqs = [
   {
     question: '¿Aceptan tarjetas de crédito?',
     answer: 'Sí, aceptamos todas las tarjetas de crédito y débito, transferencias bancarias y efectivo.',
-  },
-  {
-    question: '¿Ofrecen paquetes para novias?',
-    answer: 'Sí, contamos con paquetes exclusivos para novias que incluyen pruebas previas, maquillaje, peinado y preparación de la piel. Contáctanos por WhatsApp para enviarte el dossier completo.',
-  },
+  }
 ];
 
 export default function FAQ() {

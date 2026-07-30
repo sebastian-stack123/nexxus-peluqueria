@@ -3,23 +3,22 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 
 const images = [
-  "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1469&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?q=80&w=1287&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1620331311520-24c4d2d4d4cb?q=80&w=1472&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1469&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=1470&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=1469&auto=format&fit=crop",
+  "/fotos/galeria1.jpg",
+  "/fotos/galeria2.jpg",
+  "/fotos/galeria3.jpg",
+  "/fotos/galeria4.jpg",
+  "/fotos/galeria5.jpg",
 ];
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section id="galeria" className="py-24 bg-[#1a1a1a]">
+    <section id="galeria" className="py-24 bg-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-sm text-gold uppercase tracking-[0.4em] mb-4">Nuestro Trabajo</h2>
-          <h3 className="text-5xl md:text-6xl font-serif font-light text-white">Galería de Estilos</h3>
+          <h2 className="text-sm text-gold uppercase tracking-[0.4em] mb-4">Conócenos</h2>
+          <h3 className="text-5xl md:text-6xl font-serif font-light text-white">Nuestro Local</h3>
         </div>
 
         {/* Masonry Grid Simulation */}
