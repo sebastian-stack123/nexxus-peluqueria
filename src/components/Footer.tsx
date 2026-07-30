@@ -10,11 +10,16 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-widest text-gold mb-1">Horario</p>
-            <p className="text-sm font-light">L,M,J,S: 9am-7pm | Mar: 24h</p>
+            <p className="text-sm font-light">L-V: 9am-7pm | Sáb: 9am-6pm</p>
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-widest text-gold mb-1">Contacto</p>
-            <p className="text-sm font-light">(02) 600-9237</p>
+            <p className="text-sm font-light">0989732232 - 0991992224</p>
+          </div>
+          <div className="flex flex-col gap-2 justify-center">
+            <a href="#terminos" className="text-xs text-gray-500 hover:text-gold transition-colors">Términos y Condiciones</a>
+            <a href="#cookies" className="text-xs text-gray-500 hover:text-gold transition-colors">Política de Cookies</a>
+            <a href="#privacidad" className="text-xs text-gray-500 hover:text-gold transition-colors">Política de Privacidad</a>
           </div>
         </div>
         <div className="flex gap-4">

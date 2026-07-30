@@ -43,7 +43,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-6"
         >
           <a
-            href="https://wa.me/59326009237"
+            href="https://wa.me/593989732232"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gold text-black px-10 py-4 font-bold text-xs uppercase tracking-widest hover:bg-white transition-all duration-300 text-center w-full sm:w-auto"

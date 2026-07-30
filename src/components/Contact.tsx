@@ -33,10 +33,18 @@ export default function Contact() {
                 <div className="w-full">
                   <h4 className="text-white font-bold mb-3">Horario</h4>
                   <ul className="text-sm text-gray-400 space-y-2 border border-gold/10 p-4 rounded-sm bg-[#111]">
-                    <li className="flex justify-between border-b border-gray-800 pb-2"><span>Lunes, Miércoles, Jueves, Sábado</span> <span className="text-white">9:00 AM - 7:00 PM</span></li>
-                    <li className="flex justify-between border-b border-gray-800 py-2"><span>Martes</span> <span className="text-gold font-medium">Abierto 24 horas</span></li>
-                    <li className="flex justify-between border-b border-gray-800 py-2"><span>Viernes</span> <span className="text-white">9:00 AM - 6:00 PM</span></li>
-                    <li className="flex justify-between pt-2"><span>Domingo</span> <span className="text-gray-500">Cerrado</span></li>
+                    <li className="flex justify-between border-b border-gray-800 pb-2">
+                      <span>Lunes a Viernes</span> 
+                      <span className="text-white text-right">9:00 AM - 7:00 PM<br/><span className="text-[10px] text-gray-500">(Última cita 6:00 PM)</span></span>
+                    </li>
+                    <li className="flex justify-between border-b border-gray-800 py-2">
+                      <span>Sábado</span> 
+                      <span className="text-white text-right">9:00 AM - 6:00 PM<br/><span className="text-[10px] text-gray-500">(Última cita 5:00 PM)</span></span>
+                    </li>
+                    <li className="flex justify-between pt-2">
+                      <span>Domingo</span> 
+                      <span className="text-gray-500">Cerrado</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -44,8 +52,11 @@ export default function Contact() {
               <div className="flex items-start space-x-4">
                 <Phone className="text-gold flex-shrink-0 mt-1" size={24} />
                 <div>
-                  <h4 className="text-white font-bold mb-1">Teléfono</h4>
-                  <p className="text-gray-400 text-sm">(02) 600-9237</p>
+                  <h4 className="text-white font-bold mb-1">Teléfonos</h4>
+                  <div className="flex flex-col space-y-1">
+                    <a href="https://wa.me/593989732232" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors text-sm underline-offset-2 hover:underline">098 973 2232 (WhatsApp)</a>
+                    <a href="tel:+593991992224" className="text-gray-400 hover:text-white transition-colors text-sm underline-offset-2 hover:underline">099 199 2224</a>
+                  </div>
                 </div>
               </div>
 
@@ -53,22 +64,10 @@ export default function Contact() {
                 <Mail className="text-gold flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h4 className="text-white font-bold mb-1">Correo</h4>
-                  <p className="text-gray-400">reservas@nexxus.ec</p>
+                  <p className="text-gray-400">jmnexxus1967@hotmail.com</p>
                 </div>
               </div>
             </div>
-
-            <form className="space-y-6 pt-8 border-t border-gray-800" onSubmit={(e) => e.preventDefault()}>
-              <h4 className="text-3xl font-serif font-light text-white mb-6">Envíanos un mensaje</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <input type="text" placeholder="Nombre completo" className="bg-[#111] border border-gold/20 text-white px-4 py-3 focus:outline-none focus:border-gold transition-colors w-full" />
-                <input type="tel" placeholder="Teléfono" className="bg-[#111] border border-gold/20 text-white px-4 py-3 focus:outline-none focus:border-gold transition-colors w-full" />
-              </div>
-              <textarea placeholder="¿En qué podemos ayudarte?" rows={4} className="bg-[#111] border border-gold/20 text-white px-4 py-3 focus:outline-none focus:border-gold transition-colors w-full"></textarea>
-              <button type="submit" className="bg-gold text-black px-10 py-4 font-bold text-xs uppercase tracking-widest hover:bg-white transition-all duration-300 w-full sm:w-auto">
-                Enviar Mensaje
-              </button>
-            </form>
           </motion.div>
 
           {/* Map */}

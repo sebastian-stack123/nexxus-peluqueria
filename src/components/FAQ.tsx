@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: '¿Aceptan tarjetas de crédito?',
-    answer: 'Sí, aceptamos todas las tarjetas de crédito y débito, transferencias bancarias y efectivo.',
+    answer: 'No, por el momento aceptamos únicamente transferencias bancarias o pagos en efectivo.',
   }
 ];
 
