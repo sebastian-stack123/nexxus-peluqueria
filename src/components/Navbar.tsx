@@ -51,6 +51,7 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
+          <div id="google_translate_element" className="ml-4 mt-1 hidden lg:block overflow-hidden h-8 max-w-[120px]"></div>
           <a
             href="https://wa.me/59326009237"
             target="_blank"
@@ -62,7 +63,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-4">
+          <div id="google_translate_element_mobile" className="overflow-hidden h-8 w-24 relative mt-1"></div>
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-white">
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
