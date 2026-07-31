@@ -6,8 +6,13 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      
+      // Denegar analíticas por defecto hasta que el usuario acepte las cookies
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied'
+      });
 
+      gtag('js', new Date());
       gtag('config', 'G-26FS0H3M5L');
     </script>
     <meta charset="UTF-8" />
@@ -71,6 +76,46 @@
         "https://www.instagram.com/nexxuspeluqueria"
       ]
     }
+    </script>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: "#222"
+            },
+            button: {
+              background: "#c2185b",
+              text: "#ffffff"
+            }
+          },
+          theme: "classic",
+          position: "bottom",
+          content: {
+            message: "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web.",
+            dismiss: "Aceptar",
+            link: "Política de Privacidad",
+            href: "#privacidad"
+          },
+          onInitialise: function (status) {
+            if (this.hasConsented()) {
+              gtag('consent', 'update', {
+                'analytics_storage': 'granted'
+              });
+            }
+          },
+          onStatusChange: function(status, chosenBefore) {
+            if (this.hasConsented()) {
+              gtag('consent', 'update', {
+                'analytics_storage': 'granted'
+              });
+            }
+          }
+        });
+      });
     </script>
   </head>
   <body>
