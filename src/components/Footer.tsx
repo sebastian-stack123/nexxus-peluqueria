@@ -10,7 +10,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-widest text-gold mb-1">Horario</p>
-            <p className="text-sm font-light">L-V: 9am-7pm | Sáb: 9am-6pm</p>
+            <p className="text-sm font-light">L-V: 9am-5pm | Sáb: 9am-12pm</p>
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-widest text-gold mb-1">Contacto</p>
