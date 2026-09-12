@@ -35,11 +35,11 @@ export default function Contact() {
                   <ul className="text-sm text-gray-400 space-y-2 border border-gold/10 p-4 rounded-sm bg-[#111]">
                     <li className="flex justify-between border-b border-gray-800 pb-2">
                       <span>Lunes a Viernes</span> 
-                      <span className="text-white text-right">9:00 AM - 7:00 PM<br/><span className="text-[10px] text-gray-500">(Última cita 6:00 PM)</span></span>
+                      <span className="text-white text-right">9:00 AM - 5:00 PM</span>
                     </li>
                     <li className="flex justify-between border-b border-gray-800 py-2">
                       <span>Sábado</span> 
-                      <span className="text-white text-right">9:00 AM - 6:00 PM<br/><span className="text-[10px] text-gray-500">(Última cita 5:00 PM)</span></span>
+                      <span className="text-white text-right">9:00 AM - 12:00 PM</span>
                     </li>
                     <li className="flex justify-between pt-2">
                       <span>Domingo</span> 
